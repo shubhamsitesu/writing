@@ -2,14 +2,16 @@ const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
 const colorPicker = document.getElementById('colorPicker');
 const clearButton = document.getElementById('clearButton');
+const saveButton = document.getElementById('saveButton');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 100; // Adjust height to fit the toolbar
+canvas.height = window.innerHeight - 100;
 
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 ctx.lineWidth = 5;
+
 function startDrawing(e) {
     isDrawing = true;
     [lastX, lastY] = getMousePos(e);
@@ -50,21 +52,18 @@ canvas.addEventListener('mousedown', startDrawing);
 canvas.addEventListener('mouseup', stopDrawing);
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('touchstart', (e) => {
-    e.preventDefault(); // Prevent scrolling
+    e.preventDefault();
     startDrawing(e);
 });
 canvas.addEventListener('touchend', stopDrawing);
 canvas.addEventListener('touchmove', draw);
 clearButton.addEventListener('click', clearCanvas);
-// Existing code...
-
-const saveButton = document.getElementById('saveButton');
 
 function saveCanvas() {
     const link = document.createElement('a');
-    link.href = canvas.toDataURL('image/png'); // Create a data URL
-    link.download = 'drawing.png'; // Set the filename
-    link.click(); // Programmatically click the link to trigger the download
+    link.href = canvas.toDataURL('image/png');
+    link.download = 'drawing.png';
+    link.click();
 }
 
 saveButton.addEventListener('click', saveCanvas);
