@@ -3,17 +3,18 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     background-color: #f0f0f0;
 }
 
 .toolbar {
-    margin: 20px;
+    margin: 20px; /* Space above the canvas */
 }
 
 canvas {
-    border: 1px solid #000;
+    border: 1px solid #000; /* Keep borders on the sides */
+    border-bottom: none; /* Remove the bottom border */
     touch-action: none; /* Prevents scrolling when touching */
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 100px); /* Adjust height for the toolbar */
 }
