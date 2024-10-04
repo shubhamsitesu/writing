@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Writing Board - Shubham.info</title>
+    <title> Writing Board by Shubham.info</title>
     <meta name="description" content="A professional writing tool for users to express their creativity. Visit shubham.info for more.">
     <meta name="keywords" content="writing tool, online whiteboard, canvas tool, digital writing, education, art, online tool">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="toolbar">
-        <select id="colorPicker">
-            <option value="#FF0000">Red</option>
-            <option value="#000000">Black</option>
-            <option value="#00FF00">Green</option>
-            <option value="#0000FF">Blue</option>
-            <option value="#FFFF00">Yellow</option>
-            <option value="#FFA500">Orange</option>
-            <option value="#FFFFFF">Erase</option>
-        </select>
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="thicknessSlider" min="1" max="50" value="5">
+        <label for="thicknessSlider">Thickness: <span id="thicknessValue">5</span></label>
         <button id="clearButton">Clear</button>
         <button id="saveButton">Save</button>
     </div>
