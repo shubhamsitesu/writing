@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Writing Board by Shubham.info</title>
-    <meta name="description" content="A professional writing tool for users to express their creativity. Visit shubham.info for more.">
-    <meta name="keywords" content="writing tool, online whiteboard, canvas tool, digital writing, education, art, online tool">
+    <meta name="description" content="Inumet.com proporciona datos meteorológicos en tiempo real, pronósticos y alertas para Uruguay. Mantente actualizado sobre las condiciones climáticas con Inumet." />
+    <meta name="keywords" content="Inumet, Inumet.com, clima, pronóstico del tiempo, clima Uruguay, alertas meteorológicas, meteorología, datos climáticos, estaciones meteorológicas, actualizaciones del clima" />
+    <meta property="og:title" content="Inumet - Datos Meteorológicos en Tiempo Real para Uruguay" />
+    <meta property="og:description" content="Inumet.com ofrece datos precisos sobre el clima, pronósticos y alertas para Uruguay. Mantente informado sobre las condiciones meteorológicas con Inumet." />
+    <meta property="og:image" content="https://inumet.com/logo.jpg" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="canonical" href="https://inumet.com" />
+    <title>Inumet.com en venta $499 | Inumet brinda servicios meteorológicos, pronóstico y climatológicos a Uruguay.</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Schema for Weather Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Inumet",
+      "url": "https://inumet.com",
+      "description": "Inumet.com proporciona datos meteorológicos en tiempo real, pronósticos y alertas para Uruguay. Mantente informado sobre las condiciones climáticas.",
+      "mainEntityOfPage": "https://inumet.com",
+      "weatherService": {
+        "@type": "WeatherService",
+        "name": "Inumet Servicio Meteorológico",
+        "url": "https://inumet.com",
+        "areaServed": "UY", 
+        "serviceType": "Datos meteorológicos y pronóstico",
+        "provider": {
+          "@type": "Organization",
+          "name": "Inumet"
+        },
+        "priceCurrency": "UYU",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "UYU",
+          "price": "Bervariado",
+          "eligibleRegion": "UY",
+          "url": "https://inumet.com"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+598-xxx-xxx-xxxx",
+          "contactType": "Soporte al Cliente",
+          "areaServed": "UY",
+          "availableLanguage": "Español"
+        },
+        "sameAs": [
+          "https://www.facebook.com/inumet.com",
+          "https://www.twitter.com/inumet_com"
+        ]
+      },
+      "logo": "https://inumet.com/logo.png"
+    }
+    </script>
 </head>
+
 <body>
-    <div class="toolbar">
-        <input type="color" id="colorPicker" value="#000000">
-        <input type="range" id="thicknessSlider" min="1" max="50" value="5">
-        <label for="thicknessSlider">Thickness: <span id="thicknessValue">5</span></label>
-        <button id="clearButton">Clear</button>
-        <button id="saveButton">Save</button>
-    </div>
-    
-    <canvas id="drawingCanvas"></canvas>
-    <script src="script.js"></script>
+    <header>
+        <h1>Inumet.com En venta $499</h1>
+    </header>
+
+    <main>
+        <div class="square">
+            <h2>Inumet.com - Tu fuente de información meteorológica precisa para Uruguay</h2>
+            <p>Precio: <span class="price">$499</span></p>
+            <p>Inumet.com ofrece pronósticos meteorológicos, alertas y datos en tiempo real para Uruguay. Mantente informado sobre las condiciones climáticas con Inumet.</p>
+            <a href="https://www.godaddy.com/forsale/inumet.com" class="buy-button" target="_blank">Comprar en GoDaddy</a>
+            <a href="https://www.namecheap.com/domains/registration/results/?domain=inumet.com" class="buy-button" target="_blank">Comprar en Namecheap</a>
+        </div>
+
+        <div class="about-us">
+            <h2>Acerca de Inumet</h2>
+            <p>Inumet es tu fuente confiable de datos meteorológicos, pronósticos y alertas en Uruguay. Con información en tiempo real sobre temperatura, humedad, precipitaciones y más, Inumet garantiza que siempre estarás preparado para el clima.</p>
+        </div>
+
+        <div class="disclaimer">
+            <h2>Descargo de Responsabilidad</h2>
+            <p>Esta página es para fines de venta de dominio y no proporciona servicios meteorológicos directamente. Siempre consulta fuentes meteorológicas oficiales para obtener los datos y pronósticos más precisos.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Inumet.com. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
