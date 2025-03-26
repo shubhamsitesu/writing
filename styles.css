@@ -1,20 +1,126 @@
+/* General Body Styles */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    height: 100vh; /* Full viewport height */
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333; /* Default text color for better readability */
 }
 
-.toolbar {
-    margin: 20px; /* Space above the canvas */
+/* Header Styles */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0; /* Increased padding for better spacing */
+  text-align: center;
 }
 
-canvas {
-    border: 1px solid #000; /* Keep borders on the sides */
-    border-bottom: none; /* Remove the bottom border */
-    touch-action: none; /* Prevents scrolling when touching */
-    width: 100%;
-    height: calc(100vh - 100px); /* Adjust height for the toolbar */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Main Content Styles */
+main {
+  padding: 30px 20px; /* Adjusted padding for better spacing */
+  text-align: center;
+}
+
+/* Square Container for Main Content */
+.square {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border: 2px solid #35424a;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Increased box shadow for a smoother effect */
+}
+
+/* Section Titles */
+h2 {
+  color: #35424a;
+  font-size: 32px; /* Slightly adjusted font size for better readability */
+  line-height: 1.5;
+}
+
+/* Price Styling */
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #35424a;
+  margin-bottom: 20px;
+}
+
+/* Buy Button Styles */
+.buy-button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+
+/* About Us and Disclaimer Sections */
+.about-us, .disclaimer {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 15px 0; /* Increased padding for better spacing */
+  background: #35424a;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .square {
+      width: 90%;
+  }
+
+  .buy-button {
+      width: 100%; /* Make the button width 100% for mobile screens */
+      margin: 10px 0;
+      padding: 12px; /* Adjust padding for better fit */
+  }
+
+  h2 {
+      font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  footer {
+      padding: 10px 0;
+  }
 }
